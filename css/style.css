@@ -416,3 +416,108 @@ body {
     background: #00cc66;
 }
 
+/* For smartphones and smaller screens (below 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Adjust overall font-size for readability */
+    body, html {
+        font-size: 16px;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 10px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .menu-button {
+        font-size: 24px;
+    }
+
+    /* Slideshow adjustments */
+    .statement {
+        font-size: 32px;
+        left: 5%;
+        bottom: 15%;
+    }
+    .statement .body-copy {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    /* Project pages adjustments */
+    .project-description-overlay {
+        left: 5%;
+        top: 70%;
+        max-width: 90%;
+    }
+    .project-description-overlay h1 {
+        font-size: 28px;
+    }
+    .project-description-overlay p {
+        font-size: 16px;
+    }
+
+    .project-description {
+        padding: 40px 20px;
+        margin-left: 5%;
+        max-width: 90%;
+    }
+
+    /* About page adjustments */
+    .about-page, .contact-page {
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .about-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .name-block h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .skills-list li, .about-section ul li {
+        font-size: 14px;
+    }
+
+    /* Contact form adjustments */
+    .contact-page input,
+    .contact-page textarea {
+        font-size: 14px;
+    }
+    .contact-page button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Footer adjustments */
+    footer a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    footer img.footer-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Side Menu adjustments */
+    #sideMenu a {
+        font-size: 20px;
+        padding: 8px 24px;
+    }
+}
