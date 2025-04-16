@@ -538,19 +538,6 @@ body {
         font-size: 28px; /* slightly larger button */
     }
 
-    /* Statement adjustments (key statement and body copy) */
-    .statement {
-        bottom: 25%;
-        left: 5%;
-        font-size: 30px; /* larger text for readability */
-        max-width: 90%;
-    }
-
-    .statement .body-copy {
-        font-size: 12px; /* larger body text */
-        margin-top: 15px;
-    }
-
     /* Footer icons (SNS) adjustments */
     footer a {
         font-size: 28px; /* larger SNS icons for easy tapping */
@@ -583,6 +570,40 @@ body {
     .slideshow img {
         height: 80vh;
         object-fit: cover;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    /* Top page slideshow fix for mobile aspect */
+    .slideshow {
+        height: auto;
+        min-height: 75vh; /* allow it to scale but not collapse */
+        padding-top: 20px; /* prevent overlap with header */
+        padding-bottom: 40px; /* give room for footer icons */
+    }
+  
+    .slides {
+        height: auto;
+    }
+  
+    .slideshow img {
+        width: 100%;
+        height: auto;
+        max-height: 75vh; /* prevent too-tall images */
+        object-fit: cover;
+    }
+  
+    .statement {
+        font-size: 36px;
+        bottom: 20%;
+        left: 5%;
+        max-width: 90%;
+    }
+  
+    .statement .body-copy {
+        font-size: 16px;
+        margin-top: 10px;
     }
   }
   
