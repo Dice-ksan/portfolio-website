@@ -542,12 +542,12 @@ body {
     .statement {
         bottom: 25%;
         left: 5%;
-        font-size: 24px; /* larger text for readability */
+        font-size: 30px; /* larger text for readability */
         max-width: 90%;
     }
 
     .statement .body-copy {
-        font-size: 8px; /* larger body text */
+        font-size: 12px; /* larger body text */
         margin-top: 15px;
     }
 
@@ -568,3 +568,21 @@ body {
         padding: 10px 20px;
     }
 }
+
+@media screen and (max-width: 768px) {
+  
+    /* Adjust slideshow height for mobile */
+    .slideshow {
+        height: 80vh; /* make it shorter than full screen */
+    }
+  
+    .slides {
+        height: 80vh;
+    }
+  
+    .slideshow img {
+        height: 80vh;
+        object-fit: cover;
+    }
+  }
+  
