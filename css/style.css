@@ -555,57 +555,42 @@ body {
         padding: 10px 20px;
     }
 }
-
+  
 @media screen and (max-width: 768px) {
-  
-    /* Adjust slideshow height for mobile */
+    /* Ensure slideshow fits width on mobile and scales proportionally */
     .slideshow {
-        height: 80vh; /* make it shorter than full screen */
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 100vh; /* ensures full-screen feel without cropping */
+      overflow: hidden;
     }
   
     .slides {
-        height: 80vh;
+      position: relative;
+      width: 100%;
+      height: auto;
     }
   
     .slideshow img {
-        height: 80vh;
-        object-fit: cover;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-  
-    /* Top page slideshow fix for mobile aspect */
-    .slideshow {
-        height: auto;
-        min-height: 75vh; /* allow it to scale but not collapse */
-        padding-top: 20px; /* prevent overlap with header */
-        padding-bottom: 40px; /* give room for footer icons */
-    }
-  
-    .slides {
-        height: auto;
-    }
-  
-    .slideshow img {
-        width: 100%;
-        height: auto;
-        max-height: 75vh; /* prevent too-tall images */
-        object-fit: cover;
+      width: 100%;
+      height: auto;
+      object-fit: contain; /* contain ensures full image is visible */
     }
   
     .statement {
-        position: absolute;
-        bottom: 20%;       /* push closer to bottom */
-        left: 5%;
-        font-size: 36px;
-        max-width: 90%;
-        text-align: left;
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      font-size: 34px;
+      max-width: 90%;
+      text-align: left;
+      z-index: 3;
     }
-    
+  
     .statement .body-copy {
-        font-size: 16px;
-        margin-top: 10px;
-    }    
+      font-size: 16px;
+      margin-top: 10px;
+    }
   }
   
