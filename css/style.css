@@ -575,7 +575,6 @@ body {
     .slideshow img {
       height: 100%;
       width: auto;
-      object-fit: contain; /* contain ensures full image is visible */
     }
   
     .statement {
