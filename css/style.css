@@ -560,12 +560,14 @@ body {
     .slideshow {
       position: relative;
       width: 100%;
-      height: 100vh;
+      height: 100vh; /* lock to screen height */
       overflow: hidden;
     }
   
     .slides {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100vh;
     }
@@ -573,12 +575,13 @@ body {
     .slideshow img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Full-bleed immersive */
+      object-fit: cover;         /* fill screen */
+      object-position: center;   /* crop from center */
     }
   
     .statement {
       position: absolute;
-      bottom: 10%;
+      bottom: 8%;
       left: 5%;
       font-size: 34px;
       max-width: 90%;
@@ -591,5 +594,6 @@ body {
       margin-top: 10px;
     }
   }
+  
   
   
