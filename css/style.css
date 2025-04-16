@@ -577,22 +577,19 @@ body {
   
     /* Top page slideshow fix for mobile aspect */
     .slideshow {
-        height: auto;
-        min-height: 75vh; /* allow it to scale but not collapse */
-        padding-top: 20px; /* prevent overlap with header */
-        padding-bottom: 40px; /* give room for footer icons */
-    }
+        height: 100vh; /* restore full-screen on mobile */
+        padding-bottom: 0; /* remove padding that may shrink it */
+        position: relative; /* important so absolute children align properly */
+    }    
   
     .slides {
-        height: auto;
+        height: 100vh;
     }
-  
+    
     .slideshow img {
-        width: 100%;
-        height: auto;
-        max-height: 75vh; /* prevent too-tall images */
+        height: 100vh;
         object-fit: cover;
-    }
+    }    
   
     .statement {
         position: absolute;
