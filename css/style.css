@@ -521,3 +521,50 @@ body {
         padding: 8px 24px;
     }
 }
+
+/* Smartphone adjustments specifically for Top Page */
+@media screen and (max-width: 768px) {
+
+    /* Header adjustments for logo and menu button */
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 24px; /* increase logo size */
+    }
+
+    .menu-button {
+        font-size: 28px; /* slightly larger button */
+    }
+
+    /* Statement adjustments (key statement and body copy) */
+    .statement {
+        bottom: 25%;
+        left: 5%;
+        font-size: 40px; /* larger text for readability */
+        max-width: 90%;
+    }
+
+    .statement .body-copy {
+        font-size: 18px; /* larger body text */
+        margin-top: 15px;
+    }
+
+    /* Footer icons (SNS) adjustments */
+    footer a {
+        font-size: 28px; /* larger SNS icons for easy tapping */
+        margin: 0 12px;
+    }
+
+    footer img.footer-icon {
+        width: 28px; /* larger Note icon */
+        height: 28px;
+    }
+
+    /* Side menu adjustments (menu button opens this) */
+    #sideMenu a {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+}
