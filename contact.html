@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | D.W.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">D.W.</a>
+  <div class="menu-button" onclick="openMenu()">☰</div>
+</header>
+
+<div class="contact-page">
+  <h1>Contact</h1>
+  <form action="https://formsubmit.co/nabesama20@gmail.com" method="POST">
+    <!-- Hidden field to customize email title -->
+    <input type="hidden" name="_subject" value="from DW portfolio site">
+
+    <label for="name">Name</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" rows="6" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<footer>
+  <a href="https://www.instagram.com/..." target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://note.com/..." target="_blank"><img src="images/note-icon.png" class="footer-icon" alt="Note"></a>
+  <a href="https://x.com/..." target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+</footer>
+
+<nav id="sideMenu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<script src="js/script.js"></script>
+</body>
+</html>

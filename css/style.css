@@ -1,0 +1,418 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Removes underline */
+}
+
+.logo:hover {
+    opacity: 0.8; /* Optional, adds hover effect */
+}
+
+.menu-button {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000; /* To clearly see transparency effect */
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Gradient transparency from left to right */
+    mask-image: linear-gradient(to right, transparent, black 80%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 80%);
+}
+
+.statement {
+    position: absolute;
+    bottom: 20%;
+    left: 5%; /* slightly offset from left, not totally left */
+    text-align: left; /* align text left */
+    font-size: 60px; /* increase size to stand out */
+    color: white;
+    line-height: 1.2; /* better spacing between lines */
+    font-weight: bold; /* bold to make it outstanding */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* subtle shadow for readability */
+    z-index: 3; /* Ensures text stays above gradient */
+  }  
+
+  .statement .body-copy {
+    font-size: 18px; /* Slightly smaller than title */
+    margin-top: 20px; /* Space between title and body */
+    max-width: 600px; /* Keeps readability optimal */
+    line-height: 1.6; /* Good readability spacing */
+    font-weight: normal; /* Less bold than the title */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Maintains readability over slideshow */
+}
+
+.fade {
+    opacity: 0;
+}
+
+.fade.active {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+    color: white;
+}
+
+footer a {
+    color: white; /* or choose your own color */
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #999; /* Hover effect */
+}
+
+footer a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+footer img.footer-icon {
+    width: 24px;      
+    height: 24px;
+    vertical-align: middle; /* maintains vertical alignment */
+    position: relative;
+    top: -2px; /* raise icon slightly, adjust this value as needed */
+}
+
+/* Side menu (hidden by default) */
+#sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 20;
+}
+
+#sideMenu a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+#sideMenu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+}
+
+/* Container setup */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 100px 50px;
+    margin-top: 60px;
+    background-color: #111; /* Dark background for a clean look */
+}
+
+/* Project item setup */
+.project-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 100%;
+    height: 300px; /* Ensuring square or adjust as necessary */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Hover effect on images */
+.project-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Project information setup */
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+}
+
+.project-item:hover .project-info {
+    opacity: 1;
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.project-year, .project-type {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+/* Ensure body and html cover the whole viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the project page background color to fill entire viewport */
+body {
+    background-color: #111; /* Your dark color */
+}
+
+/* Each project page */
+.project-hero {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.project-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to top, transparent, black 80%);
+    mask-image: linear-gradient(to top, transparent, black 80%);
+}
+
+.project-description {
+    padding: 60px 40px 20px;
+    color: white;
+    background-color: #111;
+    max-width: 600px; /* match the overlay text width */
+    margin-left: 5%; /* aligns exactly with overlay */
+}
+
+.project-description h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background-color: #111;
+    padding-bottom: 100px; /* Adds breathing room before footer */
+}
+
+.project-gallery img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.project-description-overlay {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+    max-width: 600px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-description-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.project-description-overlay p {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.about-page {
+    max-width: 1000px;
+    margin: 120px auto 60px;
+    padding: 0 30px;
+    color: white;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.name-block h1 {
+    font-size: 28px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.about-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-section ul li {
+    margin: 6px 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.skills-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.skill-bar {
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: #00ff88; /* Optional: make the filled squares pop */
+}
+
+.contact-page {
+    max-width: 600px;
+    margin: 120px auto 60px;
+    padding: 0 30px;
+    color: white;
+}
+
+.contact-page h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-page input,
+.contact-page textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #222;
+    color: white;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+    outline: none;
+    border: 1px solid #00ff88;
+}
+
+.contact-page button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: #00ff88;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-page button:hover {
+    background: #00cc66;
+}
+
