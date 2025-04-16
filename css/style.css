@@ -542,12 +542,12 @@ body {
     .statement {
         bottom: 25%;
         left: 5%;
-        font-size: 30px; /* larger text for readability */
+        font-size: 24px; /* larger text for readability */
         max-width: 90%;
     }
 
     .statement .body-copy {
-        font-size: 12px; /* larger body text */
+        font-size: 8px; /* larger body text */
         margin-top: 15px;
     }
 
