@@ -595,15 +595,17 @@ body {
     }
   
     .statement {
-        font-size: 36px;
-        bottom: 10%;
+        position: absolute;
+        bottom: 10%;       /* push closer to bottom */
         left: 5%;
+        font-size: 36px;
         max-width: 90%;
+        text-align: left;
     }
-  
+    
     .statement .body-copy {
         font-size: 16px;
         margin-top: 10px;
-    }
+    }    
   }
   
