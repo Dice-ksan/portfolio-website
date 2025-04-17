@@ -463,7 +463,41 @@ body {
         padding: 40px 20px;
         margin-left: 5%;
         max-width: 90%;
+    }  
+
+    .project-links {
+        padding: 40px;
+        background-color: #111;
+        color: white;
     }
+    
+    .project-links h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+    }
+    
+    .project-links ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .project-links li {
+        margin-bottom: 12px;
+    }
+    
+    .project-links a {
+        color: #00ff88;
+        text-decoration: none;
+        font-size: 16px;
+        word-break: break-word;
+    }
+    
+    .project-links a:hover {
+        text-decoration: underline;
+        color: #00cc66;
+    }    
 
     /* About page adjustments */
     .about-page, .contact-page {
@@ -519,7 +553,7 @@ body {
     #sideMenu a {
         font-size: 20px;
         padding: 8px 24px;
-    }
+    }   
 }
 
 /* Smartphone adjustments specifically for Top Page */
@@ -554,6 +588,19 @@ body {
         font-size: 22px;
         padding: 10px 20px;
     }
+
+    /* Project-links adjustments*/
+    .project-links {
+        padding: 20px;
+    }
+    
+    .project-links h2 {
+        font-size: 20px;
+    }
+    
+    .project-links a {
+        font-size: 14px;
+    }    
 }
   
 @media screen and (max-width: 768px) {
