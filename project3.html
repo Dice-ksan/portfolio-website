@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.W. | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">D.W.</a>
+    <div class="menu-button" onclick="openMenu()">☰</div>
+</header>
+
+<div class="project-hero">
+    <img src="images/project3.jpg" alt="Project 3 Cover">
+    <div class="project-description-overlay">
+        <h1>"見えがくれ"の定量化</h1>
+        <p>Year: 2024</p>
+        <p>Type: Academic Research</p>
+        <p>Prize: 日本建築学会　第46回　情報・システム・利用・技術シンポジウム, 若手優秀発表賞</p>
+    </div>
+</div>
+
+<section class="project-description">
+    <p>大学院在籍時の研究において、建築家・槇文彦氏が提唱した「見えがくれ」の概念を、3Dモデリングおよび演算ツールを活用してコンピューテーショナルに定量化する試みを行った。歩行経路に沿って連続的に変化する街路景観の構造を数理的に定式化し、従来は感性的に捉えられていた「奥へと引き込まれるような空間の魅力」を可視化・定量化する分析ツールを開発した。</p>
+    <p>また、東京都神楽坂エリアの散策路を対象としたケーススタディを実施し、本手法の有効性と応用可能性を実証した。</p><br>
+    <p>This research was conducted during my graduate studies, exploring a computational approach to quantify the architectural concept of “mie-gakure” (the interplay of visibility and concealment) as proposed by architect Fumihiko Maki. Utilizing 3D modeling and analytical tools, I developed a method to mathematically formalize sequential changes in streetscapes along walking paths. The goal was to visualize and quantify the experiential depth of urban spaces—particularly the sense of being gradually drawn into a space—that has traditionally been understood only through intuition.</p>
+    <p>A case study was conducted in the Kagurazaka district of Tokyo, demonstrating the effectiveness and applicability of the developed analysis tool.</p><br>
+    <h2>Co-Author</h2>
+    <p>Honma Kentaro / 本間　健太郎</p>
+    Imai Kotaro / 今井　公太郎</p><br>
+    <section class="project-links">
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href="https://www.aij.or.jp/paper/detail.html?productId=702369" target="_blank">
+              日本建築学会計画系論文集_視線ベクトル法を用いた経路上の景観変化を記述するツールの開発
+            </a>
+          </li>
+        </ul>
+    </section> 
+</section>  
+
+<section class="project-gallery">
+    <img src="images/project3-1.jpg" alt="Project 3 Image 1">
+    <img src="images/project3-2.jpg" alt="Project 3 Image 2">
+    <div class="project-video">
+      <iframe 
+        width="100%" 
+        height="500" 
+        src="https://www.youtube.com/embed/q4jrIoj8XbA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>    
+    <img src="images/project3-3.jpg" alt="Project 3 Image 3">
+    <img src="images/project3-4.jpg" alt="Project 3 Image 4">
+    <img src="images/project3-5.jpg" alt="Project 3 Image 5">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/wyemk2svVas"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>    
+</section>
+
+<footer>
+    <a href="https://www.instagram.com/dicek_19972024?igsh=MWNrbm5qZTBra3Z1ZA%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://note.com/light_fish4483" target="_blank">
+        <img src="images/note-icon.png" alt="Note Icon" class="footer-icon">
+    </a>
+
+    <a href="https://x.com/im_a_roger_dog?s=21&t=YKNa6bP_xRQhMQNI9jDt1w" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+</footer>
+
+<button id="backToTop" title="Back to Top">↑ Top</button>
+
+<nav id="sideMenu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<script src="js/script.js"></script>
+</body>
+
+<script>
+    // Show button when scrolled down
+    const backToTopBtn = document.getElementById("backToTop");
+  
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    // Scroll to top when clicked
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+</script>
+  
+</html>
