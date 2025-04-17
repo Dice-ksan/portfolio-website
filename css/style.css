@@ -28,8 +28,15 @@ header {
 }
 
 .menu-button {
-    font-size: 30px;
+    font-size: 28px;
     cursor: pointer;
+    z-index: 10;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark bg */
+    padding: 8px 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* soft shadow for visibility */
+    transition: background 0.3s ease;
 }
 
 /* Slideshow */
@@ -466,9 +473,11 @@ body {
     }  
 
     .project-links {
-        padding: 40px;
+        margin-left: 0%;
+        max-width: 90%;
         background-color: #111;
         color: white;
+        padding: 0; /* removes misaligned inner space */
     }
     
     .project-links h2 {
@@ -599,20 +608,6 @@ body {
         font-size: 22px;
         padding: 10px 20px;
     }
-
-    /* Project-links adjustments*/
-    .project-links {
-        padding: 20px;
-    }
-    
-    .project-links h2 {
-        font-size: 20px;
-    }
-    
-    .project-links a {
-        font-size: 14px;
-    }    
-}
   
 @media screen and (max-width: 768px) {
     .top-page-slideshow {
@@ -650,6 +645,41 @@ body {
     .top-page-slideshow .statement .body-copy {
       font-size: 14px;
       margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-info {
+      opacity: 1 !important;
+      position: static; /* remove absolute centering */
+      background: none; /* remove dark overlay */
+      color: white;
+      padding: 10px 0;
+      text-align: left;
+    }
+  
+    .project-item {
+      border: 1px solid #333;
+      background-color: #111;
+    }
+  
+    .project-title {
+      font-size: 18px;
+      margin: 8px 0 0 0;
+    }
+  
+    .project-year,
+    .project-type {
+      font-size: 14px;
+      margin: 2px 0;
+    }
+  
+    .project-item img {
+      height: auto; /* allow full height scaling */
+    }
+  
+    .project-item:hover .project-info {
+      opacity: 1; /* ensure no fade-in effect is applied */
     }
   }
   
