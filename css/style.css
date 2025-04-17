@@ -499,6 +499,17 @@ body {
         color: #00cc66;
     }    
 
+    .project-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* ✅ show full image without cropping */
+    }
+    
+    .project-gallery {
+        padding: 20px;
+        gap: 16px;
+    }    
+
     /* About page adjustments */
     .about-page, .contact-page {
         padding: 20px;
