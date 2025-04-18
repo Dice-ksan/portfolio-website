@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.W. | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">D.W.</a>
+    <div class="menu-button" onclick="openMenu()">☰</div>
+</header>
+
+<div class="project-hero">
+    <img src="images/project4.jpg" alt="Project 4 Cover">
+    <div class="project-description-overlay">
+        <h1>AIと共闘か、AIと競闘か</h1>
+        <p>Year: 2023</p>
+        <p>Type: Poster Design, WS Planing</p>
+    </div>
+</div>
+
+<section class="project-description">
+    <p>日本建築学会が主催する、学生有志による建築ワークショップにて運営メンバーとして参加。主にポスター制作、ワークショップ全体の企画立案、AI審査官の提案・開発、特設ウェブサイトのコンテンツ制作を担当した。</p>
+    <p>本ワークショップは、AI元年とも称される2023年に開催され、「建築電脳線 – AI×建築学生 最前線」というテーマのもと、AI技術と建築設計の統合可能性を探ることを目的に、全国から建築学生が集結。スタジオ形式でAIを活用した建築デザインコンペティションを展開した。</p>
+    <p>ポスターでは、「AIとの共闘」と「AIとの競闘」という二つのスタンスを“キメラ”的に融合させたビジュアルコンセプトを採用し、AIとの複雑な関係性を象徴的に表現。また、審査においては従来の建築家に加え、独自開発したAI審査官「Yukimi」を導入。感情を持たないはずのAIが、まるで哲学や審美眼を持つかのように建築デザインを評価する様子は、来場者に未来的でありながらどこかデストピア的な印象を与え、強いインパクトを残した。</p><br>
+    <p>I participated as an organizing member in a student-led workshop hosted by the Architectural Institute of Japan. My responsibilities included poster design, overall planning of the workshop, the proposal and development of an AI judge, and the creation of content for a dedicated website.</p>
+    <p>Held in 2023—a year often referred to as the beginning of the “AI era”—the workshop focused on the theme "Architecture Cyber Battle: AI × Architecture Students at the Frontier". The aim was to explore the integration of AI technologies into architectural design. Architecture students from across Japan gathered to participate in a studio-format design competition that made extensive use of AI tools.</p>
+    <p>The poster design embodied a hybrid concept: the duality of “collaborating with AI” and “competing against AI,” visually expressed through a chimeric representation. As a unique feature of the event, we introduced an AI judge named Yukimi, in addition to the panel of human jurors. Yukimi's behavior—reviewing architectural proposals as if it possessed its own philosophy and aesthetic preferences—created a surreal, dystopian atmosphere, leaving a lasting impression on participants and audiences alike.</p><br>
+    <h2>Team</h2>
+    <p>Nozomu Sudo / 須藤 望<br>Kirari Shigematsu / 重松 希等璃<br>Shunya Aikawa / 相川 隼哉<br>Hisashi Kawakami / 川上 央<br>Ryoga Kobori / 小堀 涼雅<br>Hajime Noda / 野田 元<br>Shika So / 宋 姿佳<br>Nanako Hiramatsu / 平松 那奈子<br>Yugo Umezu / 梅津 憂剛</p><br>
+    <section class="project-links">
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href="https://archigakuseiws2023.studio.site/" target="_blank">
+              日本建築学会　学生ワークショップ2023 「建築電脳線ーAI×建築学生　最前線」　特設HP
+            </a>
+          </li>
+        </ul>
+    </section> 
+</section>  
+
+<section class="project-gallery">
+    <img src="images/project4-1.jpg" alt="Project 4 Image 1">
+    <img src="images/project4-2.jpg" alt="Project 4 Image 2">
+    <img src="images/project4-3.jpg" alt="Project 4 Image 3">
+    <img src="images/project4-4.jpg" alt="Project 4 Image 4">
+    <img src="images/project4-5.jpg" alt="Project 4 Image 5">
+    <img src="images/project4-6.jpg" alt="Project 4 Image 6">
+</section>
+
+<footer>
+    <a href="https://www.instagram.com/dicek_19972024?igsh=MWNrbm5qZTBra3Z1ZA%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://note.com/light_fish4483" target="_blank">
+        <img src="images/note-icon.png" alt="Note Icon" class="footer-icon">
+    </a>
+
+    <a href="https://x.com/im_a_roger_dog?s=21&t=YKNa6bP_xRQhMQNI9jDt1w" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+</footer>
+
+<button id="backToTop" title="Back to Top">↑ Top</button>
+
+<nav id="sideMenu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<script src="js/script.js"></script>
+</body>
+
+<script>
+    // Show button when scrolled down
+    const backToTopBtn = document.getElementById("backToTop");
+  
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    // Scroll to top when clicked
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+</script>
+  
+</html>
