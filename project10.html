@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>D.W. | Portfolio</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T08HHGNC24"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T08HHGNC24');
+    </script>
+    
+    <!-- Favicon for browsers -->
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+    <link rel="icon" sizes="192x192" href="images/favicon.jpg">
+    <link rel="apple-touch-icon" href="images/favicon.jpg">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="D.W. | Portfolio">
+    <meta property="og:description" content="Welcome to Daisuke Watanabe's portfolio.">
+    <meta property="og:image" content="https://dice-ksan.github.io/portfolio-website/images/favicon.jpg">
+    <meta property="og:url" content="https://dice-ksan.github.io/portfolio-website/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="D.W. | Portfolio">
+    <meta name="twitter:description" content="Welcome to Daisuke Watanabe's portfolio.">
+    <meta name="twitter:image" content="https://dice-ksan.github.io/portfolio-website/images/favicon.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">D.W.</a>
+    <div class="menu-button" onclick="openMenu()">☰</div>
+</header>
+
+<div class="project-hero">
+    <img src="images/project10.jpg" alt="Project 10 Cover">
+    <div class="project-description-overlay">
+        <h1>創作QR</h1>
+        <p>Year: 2025</p>
+        <p>Type: Newspaper Ad</p>
+        <p>Prize: 第73回 朝日広告賞〈一般公募・デジタル連携の部〉, -</p>
+    </div>
+</div>
+
+<section class="project-description">
+    <p>第73回 朝日広告賞〈一般公募・デジタル連携の部〉出品作品</p>
+    <p>広告主： トンボ鉛筆</p>
+    <p>課題： TOMBOWの文具のブランド広告</p>
+    <p>オリエンテーション： TOMBOWの文具は人間が何かを生み出すときにいつもそばにいるパートナーでありたい、という思いを表現してください。</p>
+    <p>段数： 15段広告</p>
+    <p>新聞の大人気コンテンツであり、現代人が日常の中で鉛筆と消しゴムを使う貴重なモーメントでもある、「クロスワード」に着目。巨大なクロスワード兼QRコードが生活者自身の手で新たなQRコードへ生まれ変わり、創作活動のパートナーとしてのTOMBOWをダイレクトに感じられる体験設計とした。</p>
+    <br>
+    <p>Entry for the 73rd Asahi Advertising Award – General Public Submission / Digital Integration Category</p>
+    <p>Advertiser: Tombow Pencil Co.</p>
+    <p>Assignment: Brand advertisement for Tombow stationery</p>
+    <p>Orientation: Express the idea that Tombow products are always by your side as creative partners whenever something is being made</p>
+    <p>Format: Full-page newspaper advertisement (15 columns)</p>
+    <p>We focused on the newspaper crossword puzzle, a beloved feature and one of the few remaining moments in everyday life where people still use pencils and erasers.
+        The ad featured a giant crossword puzzle that also functions as a QR code. As readers solve the puzzle using a pencil and eraser, the grid transforms into a new QR code, created by their own hand.
+        Users are taken to a analog & digital integrated experience that deepens their engagement with the brand—positioning Tombow as an essential, hands-on partner in everyday creativity.</p>
+    <br>
+
+    <h2>Team</h2>
+    <p>Kodai Nagura / 名倉 航大</p>
+    <p>Ryushiro Sakamoto / 坂本 龍士郎</p><br>
+
+</section>  
+
+<section class="project-gallery">
+    <img src="images/project10.jpg" alt="Project 10 Image 1">
+    <img src="images/project10-1.jpg" alt="Project 10 Image 2">
+</section>
+
+<footer>
+    <a href="https://www.instagram.com/dicek_19972024?igsh=MWNrbm5qZTBra3Z1ZA%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://note.com/light_fish4483" target="_blank">
+        <img src="images/note-icon.png" alt="Note Icon" class="footer-icon">
+    </a>
+
+    <a href="https://x.com/im_a_roger_dog?s=21&t=YKNa6bP_xRQhMQNI9jDt1w" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+</footer>
+
+<button id="backToTop" title="Back to Top">↑ Top</button>
+
+<nav id="sideMenu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<script src="js/script.js"></script>
+</body>
+
+<script>
+    // Show button when scrolled down
+    const backToTopBtn = document.getElementById("backToTop");
+  
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    // Scroll to top when clicked
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+</script>
+  
+</html>

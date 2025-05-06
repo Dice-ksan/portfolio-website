@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>D.W. | Portfolio</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T08HHGNC24"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T08HHGNC24');
+    </script>
+    
+    <!-- Favicon for browsers -->
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+    <link rel="icon" sizes="192x192" href="images/favicon.jpg">
+    <link rel="apple-touch-icon" href="images/favicon.jpg">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="D.W. | Portfolio">
+    <meta property="og:description" content="Welcome to Daisuke Watanabe's portfolio.">
+    <meta property="og:image" content="https://dice-ksan.github.io/portfolio-website/images/favicon.jpg">
+    <meta property="og:url" content="https://dice-ksan.github.io/portfolio-website/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="D.W. | Portfolio">
+    <meta name="twitter:description" content="Welcome to Daisuke Watanabe's portfolio.">
+    <meta name="twitter:image" content="https://dice-ksan.github.io/portfolio-website/images/favicon.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">D.W.</a>
+    <div class="menu-button" onclick="openMenu()">☰</div>
+</header>
+
+<div class="project-hero">
+    <img src="images/project9.jpg" alt="Project 9 Cover">
+    <div class="project-description-overlay">
+        <h1>気付かぬうちに、<br>
+            スカスカに。</h1>
+        <p>Year: 2025</p>
+        <p>Type: Newspaper Ad</p>
+    </div>
+</div>
+
+<section class="project-description">
+    <p>第73回 朝日広告賞〈一般公募・新聞広告の部〉出品作品</p>
+    <p>広告主： 日本整形外科学会</p>
+    <p>課題： 骨粗鬆症（こつそしょうしょう）の怖さ</p>
+    <p>オリエンテーション：骨強度が低下して骨折しやすくなる骨粗鬆症は健康寿命を脅かす疾患であると警鐘を鳴らす広告を作成してください。</p>
+    <p>段数： 15段広告</p>
+    <p>骨粗鬆症は、自覚症状が乏しいまま進行し、気づいたときには深刻な健康リスクとなっていることが多い疾患です。
+        その“静かに進行する怖さ”を伝えるために、一見すると正しく書かれているように見えるが、実際は線が間引かれて脆くなっている「骨粗鬆症」の漢字で表現しました。</p>
+    <br>
+    <p>Entry for the 73rd Asahi Advertising Award – General Public Submission / Newspaper Ad Category</p>
+    <p>Advertiser: The Japanese Orthopaedic Association</p>
+    <p>Assignment: Communicate the dangers of osteoporosis</p>
+    <p>Orientation: Create an ad that warns the public that osteoporosis—a condition in which bone strength declines and fractures become more likely—poses a serious threat to healthy life expectancy</p>
+    <p>Format: Full-page newspaper advertisement (15 columns)</p>
+    <p>Osteoporosis often progresses silently, with few or no symptoms until a serious health risk has already developed.
+        To convey this “quiet but dangerous progression,” the word for "osteoporosis" (骨粗鬆症) was rendered in kanji that, at first glance, appear correctly written—but are partially erased to suggest fragility.</p>
+    <br>
+
+    <h2>Team</h2>
+    <p>Shunya Ibuka / 井深 舜也</p><br>
+
+</section>  
+
+<section class="project-gallery">
+    <img src="images/project9.jpg" alt="Project 9 Image 1">
+</section>
+
+<footer>
+    <a href="https://www.instagram.com/dicek_19972024?igsh=MWNrbm5qZTBra3Z1ZA%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://note.com/light_fish4483" target="_blank">
+        <img src="images/note-icon.png" alt="Note Icon" class="footer-icon">
+    </a>
+
+    <a href="https://x.com/im_a_roger_dog?s=21&t=YKNa6bP_xRQhMQNI9jDt1w" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+</footer>
+
+<button id="backToTop" title="Back to Top">↑ Top</button>
+
+<nav id="sideMenu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<script src="js/script.js"></script>
+</body>
+
+<script>
+    // Show button when scrolled down
+    const backToTopBtn = document.getElementById("backToTop");
+  
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    // Scroll to top when clicked
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+</script>
+  
+</html>
